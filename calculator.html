@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hesapm">
+            <form>
+                <div class="ekran">
+                    <input type="text" id="ekran" name="ekran" disabled/>
+                </div>
+
+                <div>
+                    <input type="button" value="AC" onclick="geriAl()">
+                    <input type="button" value="C" onclick="temizle()">
+                    <input type="button" value="(" onclick="ekle('(')">
+                    <input type="button" value=")" onclick="ekle(')')">       
+                </div>
+
+                <div>
+                    <input type="button" value="1/x" onclick="ekle('1/')">
+                    <input type="button" value="x²" onclick="ekle('^2')">
+                    <input type="button" value="√x" onclick="ekle('√')">
+                    <input type="button" value="/" onclick="islem('/')">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick="ekle('7')">
+                    <input type="button" value="8" onclick="ekle('8')">
+                    <input type="button" value="9" onclick="ekle('9')">
+                    <input type="button" value="*" onclick="islem('*')">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="ekle('4')">
+                    <input type="button" value="5" onclick="ekle('5')">
+                    <input type="button" value="6" onclick="ekle('6')">
+                    <input type="button" value="-" onclick="islem('-')">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="ekle('1')">
+                    <input type="button" value="2" onclick="ekle('2')">
+                    <input type="button" value="3" onclick="ekle('3')">
+                    <input type="button" value="+" onclick="islem('+')">
+                </div>
+
+                <div>
+                    <input type="button" value="%" onclick="ekle('%')">
+                    <input type="button" value="0" onclick="ekle('0')">
+                    <input type="button" value="." onclick="ekle('.')">
+                    <input type="button" value="=" onclick="gonder()" id="hesapla">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
